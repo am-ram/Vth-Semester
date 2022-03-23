@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1599027265 source:c:\users\ram10\desktop\vth sem\aoa lab\bubble_sort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

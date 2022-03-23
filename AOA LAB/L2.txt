@@ -1,0 +1,53 @@
+1.factorial of a number using recursive technique.
+int fact(int n)
+{
+if(n==1)
+return 1;
+else
+n*fact(n-1);
+}
+2.Euclids algorithm to find gcd of two numbers using recursive technique.
+int gcd(int m, int n)
+{	if(n==0)
+    	return m;
+  	else
+    	return gcd(n, m%n)
+}
+3.Demonstrate system's Internal stack for recursive function.
+#include<stdio.h>
+void func(int n)
+{  if(n==0)
+    return;
+  func(--n);
+  printf("%d\n",n);
+}
+void main()
+{func(4);}
+
+5.implement recursive tower of hanoi program.
+TOH(int n, char S, char D, char T)
+{
+if(n==1)
+printf("move disk1 from %c to %c",S,D);
+else
+{
+TOH(n-1,S,T,D);
+printf("move disk %d from %c to %c",n,S,D);
+TOH(n-1,T,D,S);
+}
+main() 
+{
+int n,
+scanf("%d",&n);
+TOH(n,'S','D','T');
+}
+
+Euclid's function to find GCD:
+
+int gcd(int m, int n)
+{
+  if(n==0)
+    return m;
+  else
+    return gcd(n, m%n)
+}

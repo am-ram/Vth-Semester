@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1602054922 source:c:\users\ram10\desktop\vth sem\aoa lab\scrim\main.c
+	<stdio.h>
+	<time.h>
+

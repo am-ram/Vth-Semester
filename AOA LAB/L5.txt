@@ -1,0 +1,151 @@
+1.IMPLEMENT BINARY SEARCH ALGORITHM USING RECURSIVE DIVIDE CONQUER METHOD.
+	bs(int a[],int low,int high,int key)
+	{
+	int mid;
+	if(low<=high)
+	{	mid=(low+high)/2;
+		if(a[mid]==key)
+		return mid;
+		if(a[mid]>=key)
+		bs(a,0,mid-1,key);	
+		else
+		bs(a,mid+1,high,key);
+	}return -1;
+	}
+
+2.IMPLEMENT MERGESORT ALGORITHM USING RECURSIVE DIVIDE CONQUER METHOD.
+#include<stdio.h>
+#define MAX 50
+void mergeSort(int arr[],int low,int mid,int high);
+void partition(int arr[],int low,int high);
+int main()
+{
+int merge[MAX],i,n;
+printf("Enter the total number of elements: ");
+scanf("%d",&n);
+printf("Enter the elements which to be sort:");
+for(i=0;i<n;i++)
+{
+ scanf("%d",&merge[i]);
+}
+   partition(merge,0,n-1);
+   printf("After merge sorting elements are: ");
+    for(i=0;i<n;i++){
+         printf("%d ",merge[i]);
+    }
+   return 0;
+}
+void partition(int arr[],int low,int high){
+    int mid;
+    if(low<high){
+         mid=(low+high)/2;
+         partition(arr,low,mid);
+         partition(arr,mid+1,high);
+         mergeSort(arr,low,mid,high);}}
+
+void mergeSort(int arr[],int low,int mid,int high){
+    int i,j,k,l,temp[MAX];
+    l=low;	i=low;	j=mid+1;
+    while((l<=mid)&&(j<=high)){
+         if(arr[l]<=arr[j]){
+             temp[i]=arr[l];
+             l++;}
+         else{
+             temp[i]=arr[j];
+             j++;}  i++;}
+    if(l>mid){
+         for(k=j;k<=high;k++){
+             temp[i]=arr[k];
+             i++;}}
+    else{	for(k=l;k<=mid;k++){
+             temp[i]=arr[k];
+             i++; }}
+    for(k=low;k<=high;k++){
+         arr[k]=temp[k];}}
+3.IMPLEMENT QUICKSORT ALGORITHM USING RECURSIVE DIVIDE CONQUER METHOD.
+#include<stdio.h>
+# include<math.h>
+#define max 500 
+void qsort(int [],int,int); 
+int partition(int [],int,int); 
+int main() 
+{ 
+        int a[max],i,n; 
+        printf("Enter the value of n:\n"); 
+        scanf("%d",&n); 
+        for(i=0;i<n;i++) 
+        scanf("%d",&a[i]); 
+        printf("\nThe array elements before\n"); 
+        for(i=0;i<n;i++) 
+        printf("%d\t",a[i]); 
+        qsort(a,0,n-1); 
+        printf("\nElements of the array after sorting are:\n"); 
+        for(i=0;i<n;i++) 
+        printf("%d\t",a[i]); 
+}
+void qsort(int a[],int low,int high) 
+{ 
+int j; 
+if(low<high) 
+        { 
+                j=partition(a,low,high); 
+                qsort(a,low,j-1); 
+                qsort(a,j+1,high); 
+        } 
+} 
+int partition(int a[], int low,int high) 
+{ 
+int pivot,i,j,temp; 
+pivot=a[low]; i=low+1; j=high; 
+while(1) 
+{  while(pivot>a[i] && i<=high) 
+        i++; 
+   while(pivot<a[j]) 
+        j--; 
+    if(i<j) { 
+                temp=a[i]; 
+                a[i]=a[j]; 
+                a[j]=temp; 
+        } else 
+        {       temp=a[j]; 
+                a[j]=a[low]; 
+                a[low]=temp; 
+                return j; 
+        } 
+} 
+} 
+4. #include<stdio.h>
+#include<string.h>
+char t[100],p[50];
+void main()
+{
+     int pos;
+     clrscr();
+     printf("Enter the Source String ");
+     scanf("%s",t);
+     printf("Enter the pattern ");
+     scanf("%s",p);
+     pos=brute_force();
+     if(pos==-1)
+           printf("%s pattern not found in text",p);
+      else
+           printf("%s pattern found at index %d",p,pos);
+      getch();
+}
+int brute_force()
+{
+       int n,j,m,i;
+       n=strlen(t);
+       m=strlen(p);
+       for(i=0;i<n;i++)
+      {
+             j=0;
+             while(j<m && t[i+j]==p[j])
+            {
+                     j++;
+                    if(j==m)
+                            return i+1;  //pattern found
+            }
+      }
+      return -1;  //pattern not found
+}

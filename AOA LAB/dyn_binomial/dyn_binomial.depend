@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1602659412 source:c:\users\ram10\desktop\vth sem\aoa lab\dyn_binomial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

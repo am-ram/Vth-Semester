@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1606892373 source:c:\users\ram10\desktop\vth sem\aoa lab\dyn_dijkstra\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

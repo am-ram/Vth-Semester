@@ -1,0 +1,41 @@
+1.implement recursive tower of hanoi program.
+TOH(int n, char S, char D, char T)
+{
+if(n==1)
+printf("move disk1 from %c to %c",S,D);
+else
+{
+TOH(n-1,S,T,D);
+printf("move disk %d from %c to %c",n,S,D);
+TOH(n-1,T,D,S);
+}
+main() 
+{
+int n,
+scanf("%d",&n);
+TOH(n,'S','D','T');
+}
+2.sort an array using Selection sort technique.
+for i<-0 to n-1 do
+{
+	pos <- i
+for j <- i+1 to n-1 do
+{
+	if(a[j]<a[pos])
+	pos <- j;
+}
+swap(a[i],a[pos]);
+}
+
+3.sort an array using Bubble sort technique.
+for i<-0 to n-1 do
+{
+	for j <- i+1 to n-i-1 do
+	{
+	if(a[j]<a[i])
+	swap(a[i],a[j]);
+	}
+}
+
+
+

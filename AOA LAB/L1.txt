@@ -1,0 +1,119 @@
+mkdir rollno
+cd rollno
+
+gedit filename.c
+
+gcc filename.c
+
+./a.out
+
+1> WAP to find factorial of a number.
+2> WAP to find biggest element in an array.
+3> WAP to search an element in an array using linear search technique.
+4> WAP to find gcd of two numbers using Euclids algorithm.
+5> WAP to compute n!/n given the value of n.
+6> WAP for following scenario:
+Check whether atleast one element in set Key_Array={24,45} present in Dest_Array={12,13,18,24,44}
+7> WAP to do the following tasks 
+   sequentially as below
+   1) Enter three numbers   2 3 5
+   2) Find out the biggest of 3 numbers 
+   3) Calculate the factorial of that biggest number 5!=120
+   4) Search the factorial value in a given array
+      24 55 60 120 180   Element found
+8> WAP to count how many times for loop executes to search a given element in the array using linear search technique.   
+   Example: key=20  
+	12 23 50 18 35 20 86 99 100 Result:6   
+			Biggest Element
+	Step1:max <- A[0]
+	step2: for i <- 1 to n do
+		if(A[i]>max)
+		max <- A[i]
+	step3: Return max
+
+
+
+
+
+
+
+
+	
+	Linear Search
+step1:  read key
+	flag <- 0
+step2: for i <- 0 to n do
+	if(A[i]==key)
+	flag <- 1
+step3: if (flag==1)
+step 4: print element found at i+1 position
+
+..............................
+	Euclids ALgorithm
+   step1: while(n!=0)
+          r <- m%n
+          m <- n
+          n <- r
+   step2: Return m
+
+
+
+
+
+gcc filename.c
+./a.out
+
+#include<time.h>
+
+clock_t start,end,total;
+start=clock();
+
+/* program logic */
+
+end=clock();
+total=(end-start)/(double)CLOCKS_PER_SEC;
+printf("%g",total)
+
+
+
+
+
+
+5> WAP to compute n!/n given the value of n.
+6> WAP for following scenario:
+Check whether atleast one element in set Key_Array={24,45} present in 
+Dest_Array={12,13,18,24,44}
+
+
+#include<stdio.h>
+int Key_Array[10],Dest_Arra[10]; 
+int m,n,i,j;
+void main()
+{int flag=0;
+  printf("Enter m\n");
+  scanf("%d",&m);
+  for(i=0;i<m;i++)
+    scanf("%d",&Key_Array[i]);
+
+  printf("Enter n\n");
+  scanf("%d",&n);
+  for(i=0;i<n;i++)
+    scanf("%d",&Dest_Array[i]);
+
+  for(i=0;i<m;i++)
+     for(j=0;j<n;j++)
+     {
+	if(Key_Array[i]==Dest_Array[j])
+	{
+   printf("Key %d found",Key_Array[i]);
+	flag=1;	
+	break;
+	}
+     }
+if(flag==0)
+{
+printf("element not found");
+}
+}
+
+

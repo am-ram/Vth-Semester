@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1601447077 source:c:\users\ram10\desktop\vth sem\aoa lab\20181cse0621_sairam\main.c
+	<stdio.h>
+	<time.h>
+

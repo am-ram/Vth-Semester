@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1597817062 source:c:\users\ram10\desktop\vth sem\aoa lab\factorial\main.c
+	<stdio.h>
+	<stdlib.h>
+

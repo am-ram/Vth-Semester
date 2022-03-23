@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1602050627 source:c:\users\ram10\desktop\vth sem\aoa lab\fib_rec\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

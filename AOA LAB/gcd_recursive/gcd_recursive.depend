@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1601190393 source:c:\users\ram10\desktop\vth sem\aoa lab\gcd_recursive\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

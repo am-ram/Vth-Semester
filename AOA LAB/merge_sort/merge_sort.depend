@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1600845939 source:c:\users\ram10\desktop\vth sem\aoa lab\merge_sort\main.c
+	<stdio.h>
+	<time.h>
+
+1600845939 source:d:\vth sem\aoa lab\merge_sort\main.c
+	<stdio.h>
+	<time.h>
+

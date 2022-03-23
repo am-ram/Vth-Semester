@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1601181804 source:c:\users\ram10\desktop\vth sem\aoa lab\linear search\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

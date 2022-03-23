@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1599743650 source:c:\users\ram10\desktop\vth sem\aoa lab\rec_bin_search\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

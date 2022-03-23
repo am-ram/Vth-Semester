@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1599640325 source:c:\users\ram10\desktop\vth sem\aoa lab\string_match\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+

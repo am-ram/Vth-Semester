@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600237569 source:c:\users\ram10\desktop\vth sem\aoa lab\quick_sort\main.c
+	<time.h>
+	<stdio.h>
+
